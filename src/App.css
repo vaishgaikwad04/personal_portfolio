@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #000 inset !important;
+  -webkit-text-fill-color: #fff !important;
+  background-color: black !important;
+  color: #fff !important;
+}
+/* index.css */
+body {
+  @apply bg-black text-white;
+  margin: 0; /* remove default browser margin */
+}
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease forwards;
+}
