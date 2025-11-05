@@ -20,7 +20,7 @@ return ( <div className="min-h-screen flex flex-col bg-black text-white font-san
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, delay: 0.3 }}
     >
-      <div className="relative flex items-center justify-center w-60 h-72 sm:w-80 sm:h-96 lg:w-[24rem] lg:h-[24rem] mb-10 bg-black rounded-full shadow-[0_0_60px_rgba(200,200,200,0.3)] overflow-hidden">
+      <div className="relative flex items-center justify-center w-60 h-72 sm:w-80 sm:h-96 lg:w-[24rem] lg:h-[26rem]   rounded-full  overflow-hidden">
         <motion.img
           src="/me.jpg"
           alt="Developer"
