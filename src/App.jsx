@@ -38,7 +38,7 @@ function App() {
               <NavLink
                 to={item.to}
                 className={({ isActive }) =>
-                  `relative text-white text-lg font-normal transition-colors duration-300 ${
+                  `relative text-white text-normal font-normal transition-colors duration-300 ${
                     isActive ? "text-gray-400 after:w-full" : "hover:text-gray-400"
                   } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-gray-400 after:transition-all after:duration-300 ${
                     isActive ? "after:w-full" : "after:w-0 hover:after:w-full"
@@ -101,7 +101,7 @@ function App() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
                     `text-xl font-medium transition-colors duration-300 ${
-                      isActive ? "text-purple-400" : "hover:text-purple-400"
+                      isActive ? "text-gray-400" : "hover:text-gray-400"
                     }`
                   }
                 >
@@ -115,7 +115,7 @@ function App() {
                 href="https://github.com/vaishgaikwad04"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-purple-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300"
               >
                 <FaGithub />
               </a>
@@ -123,7 +123,7 @@ function App() {
                 href="https://www.linkedin.com/in/vaishnavi-gaikwad-772205307"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-purple-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300"
               >
                 <FaLinkedinIn />
               </a>
@@ -131,7 +131,7 @@ function App() {
                 href="https://instagram.com/vaishgaikwad_4"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-purple-400 transition-colors duration-300"
+                className="hover:text-gray-400 transition-colors duration-300"
               >
                 <FaInstagram />
               </a>

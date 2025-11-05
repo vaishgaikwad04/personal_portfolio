@@ -41,8 +41,8 @@ transition={{ duration: 1 }}
 
 
       <div>
-        <h2 className="text-xl sm:text-2xl font-semibold">Overview</h2>
-        <p className="mt-4 text-gray-300 leading-relaxed text-sm sm:text-base">
+        <h2 className="text-xl sm:text-2xl text-gray-300 font-semibold">Overview</h2>
+        <p className="mt-4 text-gray-400 leading-relaxed text-sm sm:text-base">
           {project.description}
         </p>
       </div>

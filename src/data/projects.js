@@ -59,7 +59,7 @@ images: [
 '/blog8.PNG',
 '/blog9.PNG',
 '/10.PNG',
-'/blog11.PNG',
+'/blog11.png',
 ],
 summary: 'A complete MERN-based platform combining an e-commerce store with interactive blogs and user comments.',
 description:
