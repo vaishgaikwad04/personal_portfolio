@@ -17,51 +17,51 @@ function About() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="min-h-screen bg-black text-gray-300 px-4 sm:px-6 lg:px-12 py-24 font-sans"
+      className="min-h-screen bg-black text-gray-300 px-6 sm:px-10 lg:px-20 py-24 font-sans overflow-hidden"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
         <motion.h1
-          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 tracking-wide"
+          className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4 tracking-wide"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Some Glimpses <span className="text-white">About Me</span>
+          A Few Glimpses <span className="text-red-400">About Me</span>
         </motion.h1>
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="w-24 h-[2px] bg-gray-400 mx-auto rounded-full"
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="w-24 h-[2px] bg-red-500 mx-auto rounded-full"
         ></motion.div>
       </div>
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left: Image Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/2 flex justify-center"
+          className="w-full lg:w-1/2 flex justify-center relative"
         >
-          <div className="relative w-full max-w-lg h-[450px]">
-            {/* Base Image */}
+          {/* Soft Gradient Glow */}
+          <div className="absolute -top-10 -left-10 w-72 h-72 bg-gradient-to-r from-red-700/20 via-pink-600/20 to-purple-700/20 rounded-full blur-3xl animate-pulse"></div>
+
+          <div className="relative w-full max-w-md h-[420px]">
             <img
               src="https://i.pinimg.com/736x/da/0d/53/da0d53ece606ef022e34df2ae35c0b8b.jpg"
               alt="Profile Base"
-              className="absolute top-0 left-0 w-3/4 h-[350px] object-cover rounded-lg shadow-lg hover:shadow-[0_0_20px_rgba(239,68,68,0.4)] transition-all duration-500"
+              className="absolute top-0 left-0 w-3/4 h-[320px] object-cover rounded-xl shadow-[0_0_30px_rgba(239,68,68,0.25)] hover:scale-[1.02] transition-transform duration-500"
             />
-
-            {/* Overlay Image */}
             <img
               src="https://i.pinimg.com/1200x/c7/58/ab/c758abdc213e6482b4570475421f1be2.jpg"
               alt="Vaishnavi"
-              className="absolute top-32 left-24 w-3/4 h-[350px] object-cover rounded-lg shadow-xl hover:shadow-[0_0_25px_rgba(239,68,68,0.4)] transition-all duration-500"
+              className="absolute top-28 left-28 w-3/4 h-[320px] object-cover rounded-xl shadow-[0_0_35px_rgba(239,68,68,0.3)] hover:scale-[1.03] transition-transform duration-500"
             />
           </div>
         </motion.div>
@@ -72,40 +72,65 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="w-full lg:w-1/2 space-y-4 text-[15px] leading-relaxed"
+          className="w-full lg:w-1/2 space-y-5 text-base sm:text-lg leading-relaxed"
         >
           <h3 className="text-gray-400 font-semibold uppercase tracking-widest">
             About Me
           </h3>
 
-          <p className="text-gray-400">
-            I’m <span className="text-white font-medium italic">Vaishnavi</span>, a Full-Stack Developer specializing in building scalable web applications using the{" "}
-            <span className="text-white">MERN Stack.</span> I’m passionate about creating efficient digital solutions that balance performance, design, and usability.
+          <p>
+            I’m{" "}
+            <span className="text-white font-medium italic">Vaishnavi</span>, a{" "}
+            <span className="text-white">Full-Stack Web Developer</span>{" "}
+            passionate about building scalable and intuitive web applications
+            using the{" "}
+            <span className="text-white font-semibold">MERN Stack.</span> I love
+            crafting digital solutions that balance{" "}
+            <span className="text-white">performance, design, and usability.</span>
           </p>
 
-          <p className="text-gray-400">
-            I focus on writing clean, maintainable code and building intuitive interfaces that improve user experience.
+          <p>
+            My approach focuses on writing{" "}
+            <span className="text-white font-semibold">clean, maintainable code</span>{" "}
+            and developing interfaces that offer seamless user experiences.
           </p>
 
-          <p className="text-gray-400">
-            I believe in <span className="text-white">continuous learning, collaboration, and attention to detail</span>.
-            Every project I take is an opportunity to refine my craft, explore emerging tools, and create something impactful that blends performance and aesthetics.
+          <p>
+            I believe in{" "}
+            <span className="text-white font-semibold">
+              continuous learning, collaboration, and attention to detail.
+            </span>{" "}
+            Each project I take is a chance to explore new tools, refine my craft,
+            and create meaningful digital experiences that merge aesthetics and
+            performance.
           </p>
 
           {/* Skill Badges */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="flex flex-wrap gap-3 pt-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { delayChildren: 0.3, staggerChildren: 0.1 },
+              },
+            }}
+            className="flex flex-wrap gap-3 pt-8"
           >
-            {skills.map((s, i) => (
-              <span
+            {skills.map((skill, i) => (
+              <motion.span
                 key={i}
-                className="bg-[#111] border border-gray-700 text-gray-200 px-4 py-2 rounded-md text-sm hover:bg-gray-500 hover:border-gray-500 transition-all"
+                variants={{
+                  hidden: { opacity: 0, y: 10 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                className="bg-[#111] border border-gray-700 text-gray-200 px-4 py-2 rounded-md text-sm hover:bg-gray-600 hover:border-gray-500 hover:text-white transition-all"
               >
-                {s}
-              </span>
+                {skill}
+              </motion.span>
             ))}
           </motion.div>
         </motion.div>
