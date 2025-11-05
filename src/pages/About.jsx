@@ -24,7 +24,7 @@ function About() {
       {/* Section Title */}
       <div className="text-center mb-16">
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4 tracking-wide"
+          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 tracking-wide"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -40,7 +40,7 @@ function About() {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+      <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-center gap-16">
         {/* Left: Image Section */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
