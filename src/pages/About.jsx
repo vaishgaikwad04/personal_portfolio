@@ -24,7 +24,7 @@ function About() {
       {/* Section Title */}
       <div className="text-center mb-16">
         <motion.h1
-          className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 tracking-wide"
+          className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4 tracking-wide"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -72,7 +72,7 @@ function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="w-full lg:w-1/2 space-y-5 text-base sm:text-lg leading-relaxed"
+          className="w-full lg:w-1/2 space-y-4 text-base sm:text- leading-relaxed"
         >
           <h3 className="text-gray-400 font-semibold uppercase tracking-widest">
             About Me

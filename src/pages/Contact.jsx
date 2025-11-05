@@ -23,7 +23,7 @@ setForm({ firstName: "", lastName: "", email: "", message: "" });
 return ( <section className="bg-black text-gray-200 py-28 px-6 md:px-16 mx-4 sm:mx-6 md:mx-16">
 {/* Heading */} <div className="text-center mb-12 sm:mb-16">
 <motion.h1
-className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-4 tracking-wide"
+className="text-3xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 tracking-wide"
 initial={{ opacity: 0, y: -20 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 1 }}

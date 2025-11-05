@@ -12,7 +12,7 @@ return ( <section id="projects" className="bg-black text-gray-200 py-24 px-6 md:
   {/* Heading */}
   <div className="text-center mb-16">
     <motion.h2
-      className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-wide"
+      className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-wide"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}

@@ -36,7 +36,7 @@ className="space-y-8"
 initial={{ opacity: 0, x: -20 }}
 animate={{ opacity: 1, x: 0 }}
 transition={{ duration: 1 }}
-> <h1 className="text-3xl sm:text-4xl md:text-5xl mt-12 font-semibold leading-tight">
+> <h1 className="text-2xl sm:text-3xl md:text-4xl mt-12 font-semibold leading-tight">
 {project.title} </h1>
 
 

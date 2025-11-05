@@ -51,7 +51,7 @@ const Services = () => {
         className="max-w-7xl mx-auto text-center"
       >
 
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
           What Can I Do
         </h2>
 
