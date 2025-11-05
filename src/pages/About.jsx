@@ -29,13 +29,13 @@ function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          A Few Glimpses <span className="text-red-400">About Me</span>
+          A Few Glimpses <span className="text-gray-400">About Me</span>
         </motion.h1>
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="w-24 h-[2px] bg-red-500 mx-auto rounded-full"
+          className="w-24 h-[2px] bg-gray-500 mx-auto rounded-full"
         ></motion.div>
       </div>
 
@@ -80,24 +80,24 @@ function About() {
 
           <p>
             I’m{" "}
-            <span className="text-white font-medium italic">Vaishnavi</span>, a{" "}
+            <span className="text-white italic">Vaishnavi</span>, a{" "}
             <span className="text-white">Full-Stack Web Developer</span>{" "}
             passionate about building scalable and intuitive web applications
             using the{" "}
-            <span className="text-white font-semibold">MERN Stack.</span> I love
+            <span className="text-white">MERN Stack.</span> I love
             crafting digital solutions that balance{" "}
             <span className="text-white">performance, design, and usability.</span>
           </p>
 
           <p>
             My approach focuses on writing{" "}
-            <span className="text-white font-semibold">clean, maintainable code</span>{" "}
+            <span className="text-white">clean, maintainable code</span>{" "}
             and developing interfaces that offer seamless user experiences.
           </p>
 
           <p>
             I believe in{" "}
-            <span className="text-white font-semibold">
+            <span className="text-white">
               continuous learning, collaboration, and attention to detail.
             </span>{" "}
             Each project I take is a chance to explore new tools, refine my craft,
