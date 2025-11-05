@@ -59,7 +59,7 @@ function About() {
 
             {/* Overlay Image */}
             <img
-              src="https://i.pinimg.com/1200x/96/e6/67/96e6670572d6435bf2293d9afe4b10c5.jpg"
+              src="https://i.pinimg.com/1200x/c7/58/ab/c758abdc213e6482b4570475421f1be2.jpg"
               alt="Vaishnavi"
               className="absolute top-32 left-24 w-3/4 h-[350px] object-cover rounded-lg shadow-xl hover:shadow-[0_0_25px_rgba(239,68,68,0.4)] transition-all duration-500"
             />

@@ -22,9 +22,9 @@ return ( <div className="min-h-screen flex flex-col bg-black text-white font-san
     >
       <div className="relative flex items-center justify-center w-60 h-72 sm:w-80 sm:h-96 lg:w-[24rem] lg:h-[24rem] mb-10 bg-black rounded-full shadow-[0_0_60px_rgba(200,200,200,0.3)] overflow-hidden">
         <motion.img
-          src="/p.png"
+          src="/me.jpg"
           alt="Developer"
-          className="w-71  h-auto object-contain  -mt-9"
+          className="w-71  h-auto object-contain"
           style={{ filter: "" }}
         />
       </div>
