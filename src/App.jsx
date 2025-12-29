@@ -25,8 +25,8 @@ function App() {
       {/* Navbar */}
       <nav className="flex items-center justify-between px-6 sm:px-12 lg:px-24 py-5 bg-black shadow-md relative z-20">
         {/* Logo */}
-        <h1 className="text-3xl font-semibold tracking-wide text-gray-400">
-          <NavLink to="/" className="hover:text-gray-400 transition-colors duration-300">
+        <h1 className="text-xl font-semibold tracking-wide text-white">
+          <NavLink to="/" className="hover:text-gray-400 italic transition-colors duration-300">
             MySpace
           </NavLink>
         </h1>
@@ -62,7 +62,7 @@ function App() {
             <FaGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/vaishnavi-gaikwad-772205307"
+            href="https://www.linkedin.com/in/vaishnavi-gaikwad-0508a6350?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BodL2QnzrTZGKkGqSaIs0uA%3D%3D"
             target="_blank"
             rel="noreferrer"
             className="hover:text-gray-400 transition-colors duration-300"
