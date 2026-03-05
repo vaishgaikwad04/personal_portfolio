@@ -62,17 +62,30 @@ transition={{ duration: 1 }}
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 mt-6">
-        {project.repo && (
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 rounded-md border border-white/30 text-white hover:border-white hover:scale-105 transition transform text-center shadow-md"
-          >
-            GitHub
-          </a>
-        )}
-      </div>
+
+  {project.repo && (
+    <a
+      href={project.repo}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-5 py-2 rounded-md border border-white/30 text-white hover:border-white hover:scale-105 transition transform text-center shadow-md"
+    >
+      GitHub
+    </a>
+  )}
+
+  {project.live && (
+    <a
+      href={project.live}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-5 py-2 rounded-md border border-white/30 text-white hover:border-white hover:scale-105 transition transform text-center shadow-md"
+    >
+      Live Demo
+    </a>
+  )}
+
+</div>
     </motion.div>
 
     {/* Gallery Section */}

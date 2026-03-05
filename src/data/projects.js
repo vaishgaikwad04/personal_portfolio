@@ -1,23 +1,51 @@
 export const projects = [
 // MERN / React Projects
 {
-slug: 'news-app',
-title: 'News App',
-image: '/news1.PNG',
-images: [
-'/news1.PNG',
-'/news2.PNG',
-'/news3.PNG',
-'/news4.PNG',
-'/news7.PNG',
-'/news6.PNG',
-],
-summary: 'Stay updated with the latest news from various categories.',
-description:
-'A modern news application that fetches the latest news from a free public API. Users can browse news by categories, search for specific topics, and view detailed articles. Built with React, Fetch API, and TailwindCSS for a responsive and smooth user experience.',
-tech: ['React', 'Fetch', 'TailwindCSS', 'REST API'],
-repo: 'https://github.com/vaishgaikwad04/News-App-.git',
-live: '[https://news-app-ba8j.onrender.com](https://news-app-ba8j.onrender.com)',
+  slug: "restaurant-website",
+  title: "Restaurant Website (React)",
+  image: "/restaurant1.png",
+  images: [
+    "/restaurant1.png",
+    "/restaurant2.png",
+    "/restaurant3.png",
+    "/restaurant4.png",
+    "/restaurant5.png",
+    "/restaurant6.png",
+    "/restaurant7.png",
+    "/restaurant8.png",
+    "/restaurant9.png",
+    "/restaurant10.png",
+    "/restaurant11.png",
+  ],
+  summary:
+    "A modern restaurant website built with React featuring reusable components, menu exploration, and table booking functionality.",
+
+  description:
+    "A fully responsive restaurant website developed using React with a strong focus on reusable component architecture and modern UI design. The application allows users to explore restaurant menus, browse the gallery, learn about the restaurant concept, and book tables through an interactive reservation form. Form validation is implemented using Yup with clear error handling and toast notifications for user feedback. Application state is managed using React hooks, and booking data is stored in LocalStorage to persist user actions. The project demonstrates practical frontend development skills including component reusability, state management, form validation, and smooth user experience.",
+
+  features: [
+    "Reusable React component architecture",
+    "Interactive restaurant menu exploration",
+    "Table reservation / booking form",
+    "Form validation using Yup",
+    "User feedback with toast notifications",
+    "LocalStorage integration for storing booking data",
+    "Responsive design for mobile, tablet, and desktop",
+    "Restaurant information sections including About, Services, and Gallery"
+  ],
+
+  tech: [
+    "React",
+    "JavaScript",
+    "TailwindCSS",
+    "React Hooks",
+    "Yup Validation",
+    "React Toastify",
+    "LocalStorage"
+  ],
+
+  repo: "https://github.com/vaishgaikwad04/Restaurant_App.git",
+  live: "https://restaurant-app-vb0b.onrender.com"
 },
 {
 slug: 'ecommerce',
