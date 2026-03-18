@@ -50,18 +50,15 @@ return ( <div className="min-h-screen flex flex-col bg-black text-white font-san
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Full Stack Web Developer
+        Full-Stack MERN Developer
       </motion.h2>
 
-      <p className="text-gray-400 mt-6 text-base sm:text-lg mb-2 leading-relaxed">
-        I specialize in building{" "}
-        <span className="text-white font-semibold">
-          modern, scalable, and efficient web applications
-        </span>
-        . With strong expertise in the MERN stack, I focus on writing clean,
-        optimized code and creating seamless digital experiences.
-      </p>
-
+     <p className="text-gray-400 mt-6 text-base sm:text-lg mb-2 leading-relaxed">
+  I build 
+  <span className="text-white font-semibold"> scalable and responsive web applications </span>
+  using the MERN stack. My focus is on writing clean, maintainable code and creating
+  seamless user experiences through modern frontend architecture and efficient backend systems.
+</p>
       <div className="flex flex-col sm:flex-row gap-5 mt-8 justify-center lg:justify-start">
         <Link
           to="/portfolio"

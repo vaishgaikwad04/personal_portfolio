@@ -2,7 +2,7 @@ export const projects = [
 // MERN / React Projects
 {
   slug: "restaurant-website",
-  title: "Restaurant Website (React)",
+  title: "Restaurant Reservation System",
   image: "/restaurant1.png",
   images: [
     "/restaurant1.png",

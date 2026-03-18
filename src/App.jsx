@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedinIn, FaInstagram, FaBars, FaTimes } from "react-icons/fa";
 import Home from "./pages/Home.jsx";
+
 import Portfolio from "./pages/Portfolio.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
@@ -22,16 +23,15 @@ function App() {
 
   return (
     <div className="flex flex-col min-h-screen bg-black text-white font-sans">
-      {/* Navbar */}
-      <nav className="flex items-center justify-between px-6 sm:px-12 lg:px-24 py-5 bg-black shadow-md relative z-20">
-        {/* Logo */}
+          <nav className="flex items-center justify-between px-6 sm:px-12 lg:px-24 py-5 bg-black shadow-md relative z-20">
+      
         <h1 className="text-xl font-semibold tracking-wide text-white">
           <NavLink to="/" className="hover:text-gray-400 italic transition-colors duration-300">
             MySpace
           </NavLink>
         </h1>
 
-        {/* Centered Desktop Nav Links */}
+      
         <ul className="hidden md:flex space-x-16 absolute left-1/2 transform -translate-x-1/2">
           {navItems.map((item) => (
             <li key={item.to}>
@@ -51,7 +51,6 @@ function App() {
           ))}
         </ul>
 
-        {/* Desktop Social Icons */}
         <div className="hidden md:flex space-x-6 text-xl text-white ml-auto">
           <a
             href="https://github.com/vaishgaikwad04"
@@ -79,7 +78,7 @@ function App() {
           </a>
         </div>
 
-        {/* Hamburger Icon */}
+       
         <div
           className="md:hidden text-2xl cursor-pointer text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -87,7 +86,7 @@ function App() {
           {mobileMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
 
-        {/* Mobile Menu */}
+      
         <div
           className={`fixed top-0 right-0 h-full w-3/4 sm:w-1/2 bg-black bg-opacity-95 transform transition-transform duration-300 z-30 md:hidden ${
             mobileMenuOpen ? "translate-x-0" : "translate-x-full"
@@ -109,7 +108,7 @@ function App() {
                 </NavLink>
               </li>
             ))}
-            {/* Mobile Social Icons */}
+          
             <div className="flex space-x-8 text-2xl mt-8">
               <a
                 href="https://github.com/vaishgaikwad04"
@@ -140,7 +139,7 @@ function App() {
         </div>
       </nav>
 
-      {/* Routes */}
+   
       <main className="flex-grow px-4 sm:px-10 lg:px-24 py-10">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -152,7 +151,7 @@ function App() {
         </Routes>
       </main>
 
-      {/* Footer */}
+     
       <Footer />
     </div>
   );
