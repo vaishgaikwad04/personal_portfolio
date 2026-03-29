@@ -1,142 +1,139 @@
 import React from "react";
-import { motion } from "framer-motion";
 
-function About() {
-  const skills = [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Git",
-    "Tailwind CSS",
-  ];
-
+const About = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeInOut" }}
-      className="min-h-screen bg-black text-gray-300 px-6 sm:px-10 lg:px-20 py-24 font-sans overflow-hidden"
-    >
-      {/* Section Title */}
-      <div className="text-center mb-16">
-        <motion.h1
-          className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4 tracking-wide"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          A Few Glimpses <span className="text-gray-400">About Me</span>
-        </motion.h1>
-        <motion.div
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="w-24 h-[2px] bg-gray-500 mx-auto rounded-full"
-        ></motion.div>
-      </div>
+    <section className="bg-black text-white w-full py-20 px-4 sm:px-8 lg:px-16">
 
-      {/* Content Section */}
-      <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-center gap-16">
-        {/* Left: Image Section */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="w-full lg:w-1/2 flex justify-center relative"
-        >
-          {/* Soft Gradient Glow */}
-          <div className="absolute -top-10 -left-10 w-72 h-72 bg-gradient-to-r from-red-700/20 via-pink-600/20 to-purple-700/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="max-w-6xl ml-64">
 
-          <div className="relative w-full max-w-md h-[420px]">
-            <img
-              src="https://i.pinimg.com/736x/da/0d/53/da0d53ece606ef022e34df2ae35c0b8b.jpg"
-              alt="Profile Base"
-              className="absolute top-0 left-0 w-3/4 h-[320px] object-cover rounded-xl shadow-[0_0_30px_rgba(239,68,68,0.25)] hover:scale-[1.02] transition-transform duration-500"
-            />
-            <img
-              src="https://i.pinimg.com/1200x/c7/58/ab/c758abdc213e6482b4570475421f1be2.jpg"
-              alt="Vaishnavi"
-              className="absolute top-28 left-28 w-3/4 h-[320px] object-cover rounded-xl shadow-[0_0_35px_rgba(239,68,68,0.3)] hover:scale-[1.03] transition-transform duration-500"
-            />
+        {/* Intro */}
+        <div className="mb-16">
+          <p className="text-gray-400 text-xl max-w-2xl leading-relaxed">
+            I didn’t start with a clear plan to become a developer — I started by trying to understand how things work.
+            That curiosity turned into building projects, breaking them, fixing them, and slowly getting better at it.
+          </p>
+        </div>
+
+        {/* Name */}
+        <div className="mb-20">
+          <h3 className="text-gray-200 text-xl italic">Hello I'm</h3>
+          <h1 className="text-4xl md:text-5xl font-semibold tracking-wide">
+          Vaishnavi Gaikwad
+          </h1>
+          <p className="text-gray-500 mt-2">( web developer )</p>
+        </div>
+
+        {/* Description */}
+        <div className="grid md:grid-cols-2 gap-12 mb-24 text-lg">
+          
+          <p className="text-gray-400 leading-relaxed">
+            I work mainly with the MERN stack, building full-stack applications that focus on real functionality.
+            I’ve built features like authentication systems, CRUD operations, and basic eCommerce flows — handling both frontend and backend.
+          </p>
+
+          <p className="text-gray-400 leading-relaxed">
+            Not everything works perfectly the first time, but understanding why something broke is something I enjoy.
+            I prefer building practical projects over flashy ones, focusing on clean structure, logic, and usability.
+          </p>
+
+        </div>
+
+        {/* Philosophy */}
+        <div className="mb-24">
+          <h2 className="text-gray-400 text-sm uppercase tracking-widest mb-4">
+            Philosophy
+          </h2>
+          <p className="text-gray-300 max-w-2xl leading-relaxed text-lg">
+            For me, development is about writing code that makes sense — not just for now, but later too.
+            Clean, readable, and maintainable code always matters more than clever shortcuts.
+          </p>
+        </div>
+
+        {/* Skills */}
+        <div className="mb-24  text-lg">
+          <h2 className="text-gray-400 text-sm uppercase tracking-widest mb-8">
+            Skills
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-10">
+
+            <div>
+              <h3 className="text-gray-500 mb-2">Frontend</h3>
+              <p className="text-gray-300">
+                React · JavaScript · Tailwind CSS · Responsive UI
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-gray-500 mb-2">Backend</h3>
+              <p className="text-gray-300">
+                Node.js · Express · REST APIs · Authentication · Socket.IO
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-gray-500 mb-2">Database</h3>
+              <p className="text-gray-300">
+                MongoDB · Mongoose · Data Handling
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-gray-500 mb-2">Focus Areas</h3>
+              <p className="text-gray-300">
+                CRUD · Debugging · Project Structure · API Integration
+              </p>
+            </div>
+
           </div>
-        </motion.div>
+        </div>
 
-        {/* Right: Text Section */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="w-full lg:w-1/2 space-y-4 text-base sm:text- leading-relaxed"
-        >
-          <h3 className="text-gray-400 font-semibold uppercase tracking-widest">
-            About Me
-          </h3>
+        {/* Services */}
+        <div>
+          <h2 className="text-gray-400 text-sm uppercase tracking-widest mb-8">
+            Services
+          </h2>
 
-          <p>
-            I’m{" "}
-            <span className="text-white italic">Vaishnavi</span>, a{" "}
-            <span className="text-white">Full-Stack Web Developer</span>{" "}
-            passionate about building scalable and intuitive web applications
-            using the{" "}
-            <span className="text-white">MERN Stack.</span> I love
-            crafting digital solutions that balance{" "}
-            <span className="text-white">performance, design, and usability.</span>
-          </p>
+          <div className="grid md:grid-cols-2 gap-10">
 
-          <p>
-            My approach focuses on writing{" "}
-            <span className="text-white">clean, maintainable code</span>{" "}
-            and developing interfaces that offer seamless user experiences.
-          </p>
+            <div>
+              <p className="text-gray-500">( WD )</p>
+              <h3 className="text-white text-lg">Web Applications</h3>
+              <p className="text-gray-400 text-sm">
+                Building complete apps with real functionality, not just UI.
+              </p>
+            </div>
 
-          <p>
-            I believe in{" "}
-            <span className="text-white">
-              continuous learning, collaboration, and attention to detail.
-            </span>{" "}
-            Each project I take is a chance to explore new tools, refine my craft,
-            and create meaningful digital experiences that merge aesthetics and
-            performance.
-          </p>
+            <div>
+              <p className="text-gray-500">( FD )</p>
+              <h3 className="text-white text-lg">Frontend</h3>
+              <p className="text-gray-400 text-sm">
+                Clean and responsive interfaces that work across devices.
+              </p>
+            </div>
 
-          {/* Skill Badges */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: { opacity: 0, y: 30 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: { delayChildren: 0.3, staggerChildren: 0.1 },
-              },
-            }}
-            className="flex flex-wrap gap-3 pt-8"
-          >
-            {skills.map((skill, i) => (
-              <motion.span
-                key={i}
-                variants={{
-                  hidden: { opacity: 0, y: 10 },
-                  visible: { opacity: 1, y: 0 },
-                }}
-                className="bg-[#111] border border-gray-700 text-gray-200 px-4 py-2 rounded-md text-sm hover:bg-gray-600 hover:border-gray-500 hover:text-white transition-all"
-              >
-                {skill}
-              </motion.span>
-            ))}
-          </motion.div>
-        </motion.div>
+            <div>
+              <p className="text-gray-500">( BD )</p>
+              <h3 className="text-white text-lg">Backend</h3>
+              <p className="text-gray-400 text-sm">
+                APIs, authentication, and server-side logic that actually work.
+              </p>
+            </div>
+
+            <div>
+              <p className="text-gray-500">( FS )</p>
+              <h3 className="text-white text-lg">Full Stack</h3>
+              <p className="text-gray-400 text-sm">
+                Connecting frontend and backend into one working system.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-    </motion.section>
+    </section>
   );
-}
+};
 
 export default About;
