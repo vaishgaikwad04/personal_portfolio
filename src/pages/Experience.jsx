@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className="mt-24 max-w-7xl mx-auto border-t border-gray-800 pt-12">
+    <div id='experience' className="mt-24 max-w-7xl mx-auto border-t border-gray-800 pt-12">
 
       <div className="grid md:grid-cols-2 gap-12">
 

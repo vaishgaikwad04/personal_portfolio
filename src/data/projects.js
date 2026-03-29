@@ -37,7 +37,7 @@ export const projects = [
   {
     slug: "restaurant-website",
     title: "Restaurant Website (React)",
-    image: "/res1.png",
+    image: "/res.png",
     images: [
       "/restaurant1.png",
       "/restaurant2.png",
@@ -81,6 +81,40 @@ export const projects = [
     repo: "https://github.com/vaishgaikwad04/Restaurant_App.git",
     live: "https://restaurant-app-vb0b.onrender.com",
   },
+  {
+  slug: "portfolio",
+  title: "Personal Portfolio Website",
+  image: "/port.png", // main preview image
+  images: [
+    "/portfolio1.png",
+    "/portfolio2.png",
+    "/portfolio3.png",
+    "/portfolio4.png",
+  ],
+  summary: "Modern portfolio showcasing projects, skills, and experience.",
+
+  description:
+    "A modern and minimal personal portfolio website built using React and TailwindCSS to showcase projects, skills, and experience. The design focuses on clean typography, smooth navigation, and interactive UI elements such as hover effects and project previews. It includes dynamic project routing, responsive layouts for all devices, and a structured component-based architecture. This portfolio reflects both frontend development skills and a strong sense of design aesthetics.",
+
+  features: [
+    "Clean and minimal UI design",
+    "Responsive layout for all screen sizes",
+    "Dynamic project pages with routing",
+    "Interactive hover effects and transitions",
+    "Component-based architecture",
+    "Smooth navigation using React Router",
+  ],
+
+  tech: [
+    "React",
+    "JavaScript",
+    "TailwindCSS",
+    "React Router",
+  ],
+
+  repo: "https://github.com/your-username/portfolio", // replace
+  live: "https://your-portfolio-link.com", // replace
+},
 
   {
     slug: "mern-blog-ecommerce",
@@ -106,4 +140,5 @@ export const projects = [
     repo: "https://github.com/vaishgaikwad04/Ecommerce-website.git",
     live: "[https://tira-ecommerce.onrender.com](https://tira-ecommerce.onrender.com)",
   },
+  
 ];

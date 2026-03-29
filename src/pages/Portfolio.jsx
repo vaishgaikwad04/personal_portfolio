@@ -6,6 +6,7 @@ function Portfolio() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
+    <div>
     <section
       id="projects"
       className="bg-black text-gray-200 py-24 px-6 md:px-16"
@@ -47,7 +48,7 @@ function Portfolio() {
               </a>
               <h1></h1>
               <h2 className="text-gray-400 mt-2 text-2xl">{p.title}</h2>
-              <h2 className="text-gray-500 text-xl">{p.summary}</h2>
+              <h2 className="text-gray-500 text-xl mb-12">{p.summary}</h2>
             </div>
           </div>
         ))}
@@ -64,9 +65,14 @@ function Portfolio() {
             alt="Enlarged project"
             className="max-h-full max-w-full rounded-2xl shadow-2xl"
           />
+
+
+          
         </div>
       )}
     </section>
+    
+    </div>
   );
 }
 

@@ -9,19 +9,16 @@ import Experience from "./Experience";
 function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-black text-white font-sans overflow-hidden mt-4">
-      
-      
+      <img className="w-60 h-auto text-right brightness-85 group-hover:brightness-65" src="me.jpg"/>
+      <p className="text-gray-400 mt-6 text-3xl sm:text-4xl mb-2 ml-180">
+        I build full-stack web applications from frontend to backend, focusing
+        on performance, scalability, and smooth user experience.
+      </p>
 
-        <p className="text-gray-400 mt-6 text-3xl sm:text-4xl mb-2 ml-180">
-          I build full-stack web applications from frontend to backend, focusing
-          on performance, scalability, and smooth user experience.
-        </p>
-   
-   
       <Portfolio />
-      <About/>
-      <Experience/>
-      <Contact/>
+      <About />
+      <Experience />
+      <Contact />
     </div>
   );
 }
