@@ -78,8 +78,8 @@ export const projects = [
       "LocalStorage",
     ],
 
-    repo: "https://github.com/vaishgaikwad04/Restaurant_App.git",
-    live: "https://restaurant-app-vb0b.onrender.com",
+    repo: "https://github.com/vaishgaikwad04/personal_portfolio.git",
+    live: "https://personal-portfolio-dk1m.onrender.com",
   },
   {
   slug: "portfolio",
@@ -138,7 +138,7 @@ export const projects = [
       "This is a modern MERN stack web application that blends e-commerce functionality with a full-featured blog system. Users can read and comment on blogs, explore product collections. Includes CRUD operations for blogs and products, and a clean TailwindCSS UI. Built for seamless integration between content and commerce.",
     tech: ["MongoDB", "Express", "React", "Node.js", "TailwindCSS", "REST API"],
     repo: "https://github.com/vaishgaikwad04/Ecommerce-website.git",
-    live: "[https://tira-ecommerce.onrender.com](https://tira-ecommerce.onrender.com)",
+    live: "https://tira-ecommerce.onrender.com",
   },
   
 ];
