@@ -79,7 +79,7 @@ export const projects = [
     ],
 
     repo: "https://github.com/vaishgaikwad04/personal_portfolio.git",
-    live: "https://personal-portfolio-dk1m.onrender.com",
+    live: "https://restaurant-app-vb0b.onrender.com/",
   },
   {
   slug: "portfolio",
@@ -112,8 +112,8 @@ export const projects = [
     "React Router",
   ],
 
-  repo: "https://github.com/your-username/portfolio", // replace
-  live: "https://your-portfolio-link.com", // replace
+  repo: "https://github.com/your-username/portfolio", 
+  live: "https://personal-portfolio-dk1m.onrender.com/", 
 },
 
   {
