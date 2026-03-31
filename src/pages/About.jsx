@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 import useScrollAnimation from "../hooks/ScrollAnimation";
 
 const About = () => {
@@ -19,27 +16,44 @@ const About = () => {
     <div id="about">
       {/* Social Icons */}
       <div className="flex justify-center gap-12">
-        <a href="https://github.com/vaishgaikwad04" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/vaishgaikwad04"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaGithub className="text-white text-lg hover:opacity-70 transition" />
         </a>
 
-        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://linkedin.com/in/vaishnavi-gaikwad-0508a6350"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaLinkedinIn className="text-[#0A66C2] text-lg hover:opacity-70 transition" />
         </a>
 
-        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+        {/* Email */}
+        <a href="mailto:vaishgaikwad472@gmail.com" title="Send Email">
+          <FaEnvelope className="text-gray-600 text-lg hover:opacity-70 transition" />
+        </a>
+        <a
+          href="https://instagram.com/vaishgaikwad_4"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaInstagram className="text-[#E4405F] text-lg hover:opacity-70 transition" />
         </a>
       </div>
 
       <section className="bg-black text-white w-full py-20 px-4 sm:px-8 lg:px-16">
         <div className="max-w-6xl ml-20 md:ml-64">
-
           {/* Intro */}
           <div
             ref={introRef}
             className={`mb-16 transition-all duration-700 ease-out will-change-transform ${
-              introVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              introVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             <p className="text-gray-400 text-xl max-w-2xl leading-relaxed">
@@ -54,7 +68,9 @@ const About = () => {
           <div
             ref={nameRef}
             className={`mb-20 transition-all duration-700 delay-100 ${
-              nameVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              nameVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             <h3 className="text-gray-200 text-xl italic">Hello I'm</h3>
@@ -68,13 +84,16 @@ const About = () => {
           <div
             ref={descRef}
             className={`grid md:grid-cols-2 gap-12 mb-24 text-lg transition-all duration-700 delay-200 ${
-              descVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              descVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             <p className="text-gray-400 leading-relaxed">
               I work mainly with the MERN stack, building full-stack
               applications that focus on real functionality. I’ve built features
-              like authentication systems, CRUD operations, and basic eCommerce flows.
+              like authentication systems, CRUD operations, and basic eCommerce
+              flows.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
@@ -147,7 +166,9 @@ const About = () => {
           <div
             ref={servicesRef}
             className={`transition-all duration-700 delay-500 ${
-              servicesVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              servicesVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
             }`}
           >
             <h2 className="text-gray-400 text-sm uppercase tracking-widest mb-8">
@@ -188,7 +209,6 @@ const About = () => {
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </div>
