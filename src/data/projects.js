@@ -125,7 +125,7 @@ export const projects = [
     title: "E-Commerce + Blog Platform (MERN)",
     image: "/blog1.png",
     images: [
-      "/blog1.PNG",
+      "/blog1.png",
       "/blog2.PNG",
       "/blog3.PNG",
       "/blog4.PNG",
