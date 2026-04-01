@@ -1,5 +1,4 @@
 export const projects = [
-  // MERN / React Projects
   {
     slug: "ecommerce",
     id: 1,
@@ -87,7 +86,7 @@ export const projects = [
   slug: "portfolio",
    id: 3,
   title: "Personal Portfolio Website",
-  image: "/port.png", // main preview image
+  image: "/port.png", 
   images: [
     "/portfolio1.png",
     "/portfolio2.png",
@@ -123,7 +122,7 @@ export const projects = [
     slug: "mern-blog-ecommerce",
      id: 4,
     title: "E-Commerce + Blog Platform (MERN)",
-    image: "/blog1.png",
+    image: "/blog.png",
     images: [
       "/blog1.png",
       "/blog2.PNG",
