@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { Routes, Route, NavLink, useLocation } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  NavLink,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
@@ -15,6 +21,25 @@ import Cursor from "./components/ui/Cursor.jsx";
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleScroll = (section) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+
+      setTimeout(() => {
+        const el = document.getElementById(section);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 200); // delay ensures Home is rendered
+    } else {
+      const el = document.getElementById(section);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-black text-white font-sans">
@@ -22,6 +47,7 @@ function App() {
 
       {/* Navbar */}
       <nav className="flex items-center justify-between px-6 py-5 bg-black relative z-30 animate-fade-in-down">
+        
         <NavLink
           to="/"
           className="text-lg italic tracking-wide text-gray-400 hover:opacity-70 transition ml-8"
@@ -31,6 +57,7 @@ function App() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
+          
           <NavLink
             to="/project"
             className="text-gray-400 hover:text-white transition-all duration-300 hover:tracking-wider"
@@ -38,19 +65,20 @@ function App() {
             Work
           </NavLink>
 
-          <a
-            href="/#about"
+          <button
+            onClick={() => handleScroll("about")}
             className="text-gray-400 hover:text-white transition-all duration-300 hover:tracking-wider"
           >
             About
-          </a>
+          </button>
 
-          <a
-            href="/#experience"
+          <button
+            onClick={() => handleScroll("experience")}
             className="text-gray-400 hover:text-white transition-all duration-300 hover:tracking-wider"
           >
             Experience
-          </a>
+          </button>
+
         </div>
 
         {/* Hamburger */}
@@ -88,38 +116,39 @@ function App() {
           }`}
         >
           <div className="flex flex-col space-y-10 text-3xl font-light tracking-wide">
-            {["Work", "About", "Experience"].map((item, index) => {
-              const pathMap = {
-                Work: "/project",
-                About: "/#about",
-                Experience: "/#experience",
-              };
+            
+            <NavLink
+              to="/project"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Work
+            </NavLink>
 
-              return (
-                <NavLink
-                  key={item}
-                  to={pathMap[item]}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`text-gray-400 hover:text-white transition-all duration-500 ${
-                    mobileMenuOpen
-                      ? `translate-y-0 opacity-100`
-                      : "translate-y-10 opacity-0"
-                  }`}
-                  style={{
-                    transitionDelay: `${index * 120}ms`,
-                  }}
-                >
-                  {item}
-                </NavLink>
-              );
-            })}
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                handleScroll("about");
+              }}
+            >
+              About
+            </button>
+
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                handleScroll("experience");
+              }}
+            >
+              Experience
+            </button>
+
           </div>
         </div>
       </nav>
 
       <hr className="border-gray-800 mx-6" />
 
-      {/* ROUTES WITH SMOOTH PAGE TRANSITION */}
+      {/* ROUTES */}
       <main className="flex-grow relative">
         <div key={location.pathname} className="animate-fade-in-page">
           <Routes location={location}>

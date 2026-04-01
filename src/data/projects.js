@@ -2,8 +2,9 @@ export const projects = [
   // MERN / React Projects
   {
     slug: "ecommerce",
+    id: 1,
     title: "Zara Inspired E-Commerce Website",
-    image: "/zara9.PNG",
+    image: "/zara9.webp",
     images: [
       "/zara2.PNG",
       "/zara3.PNG",
@@ -36,8 +37,9 @@ export const projects = [
   },
   {
     slug: "restaurant-website",
+     id: 2,
     title: "Restaurant Website (React)",
-    image: "/res.png",
+    image: "/res.webp",
     images: [
       "/restaurant1.png",
       "/restaurant2.png",
@@ -83,6 +85,7 @@ export const projects = [
   },
   {
   slug: "portfolio",
+   id: 3,
   title: "Personal Portfolio Website",
   image: "/port.png", // main preview image
   images: [
@@ -118,8 +121,9 @@ export const projects = [
 
   {
     slug: "mern-blog-ecommerce",
+     id: 4,
     title: "E-Commerce + Blog Platform (MERN)",
-    image: "/blog1.PNG",
+    image: "/blog1.png",
     images: [
       "/blog1.PNG",
       "/blog2.PNG",

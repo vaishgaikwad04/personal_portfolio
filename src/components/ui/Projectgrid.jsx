@@ -25,7 +25,7 @@ function ProjectsGrid({ limit }) {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-auto object-cover rounded transition-all duration-700 ease-in-out opacity-70 group-hover:opacity-50"
+                className="w-full h-110 object-cover  transition-all duration-700 ease-in-out opacity-70 group-hover:opacity-50"
               />
             </a>
 

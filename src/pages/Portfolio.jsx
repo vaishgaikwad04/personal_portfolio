@@ -51,11 +51,7 @@ function Portfolio() {
                   onClick={() => setSelectedImage(p.image)}
                 >
                   {/* Image */}
-                  <a
-                    href={p.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={p.live} target="_blank" rel="noopener noreferrer">
                     <img
                       src={p.image}
                       alt={
@@ -69,14 +65,21 @@ function Portfolio() {
                   </a>
 
                   {/* Title */}
-                  <h2 className="text-gray-300 mt-4 text-2xl transition-all duration-300 group-hover:translate-x-2">
-                    {p.title}
-                  </h2>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <h2 className="text-gray-300 mt-4 text-2xl transition-all duration-500 group-hover:translate-x-1">
+                        {p.title}
+                      </h2>
 
-                  {/* Summary */}
-                  <p className="text-gray-500 text-lg mb-10 transition-all duration-300 group-hover:translate-x-2">
-                    {p.summary}
-                  </p>
+                      <p className="text-gray-500 text-lg mb-10 transition-all duration-500 group-hover:text-gray-300">
+                        {p.summary}
+                      </p>
+                    </div>
+
+                    <div className="text-gray-400 text-lg font-semibold mt-4">
+                      {String(index + 1).padStart(2, "0")}
+                    </div>
+                  </div>
                 </div>
               </div>
             );
